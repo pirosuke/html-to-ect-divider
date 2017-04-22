@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!-- tpl:frame="_frame" -->
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+
+    <link rel="stylesheet" type="text/css" href="common.css" />
+    <!-- tpl:block="extra_css" -->
+    <link rel="stylesheet" type="text/css" href="sample1.css" />
+    <!-- /tpl:block="extra_css" -->
+
+    <title tpl:text="page_title">page title</title>
+
+  </head>
+
+  <body>
+
+    <div>common-block</div>
+
+    <!-- tpl:content -->
+    <div>sample1-block start</div>
+
+    <!-- tpl:include="pager" -->
+    <div>pager1</div>
+    <!-- /tpl:include="pager" -->
+
+    <div>sample1 content</div>
+
+    <!-- tpl:include="pager" -->
+    <div>pager2</div>
+    <!-- /tpl:include="pager" -->
+
+    <div>sample1-block end</div>
+    <!-- /tpl:content -->
+
+    <script src="common.js"></script>
+    <!-- tpl:block="extra_js" -->
+    <script src="sample1.js"></script>
+    <!-- /tpl:block="extra_js" -->
+
+  </body>
+</html>
