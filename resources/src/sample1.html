@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- tpl:frame="_frame" -->
+<!-- tpl:frame="parts/_frame" -->
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
@@ -20,15 +20,23 @@
     <!-- tpl:content -->
     <div>sample1-block start</div>
 
-    <!-- tpl:include="pager" -->
+    <!-- tpl:include="parts/pager" -->
     <div>pager1</div>
-    <!-- /tpl:include="pager" -->
+    <!-- /tpl:include="parts/pager" -->
 
     <div>sample1 content</div>
 
-    <!-- tpl:include="pager" -->
+    <!-- tpl:include="parts/pager" -->
     <div>pager2</div>
-    <!-- /tpl:include="pager" -->
+    <!-- /tpl:include="parts/pager" -->
+
+
+    <!-- tpl:include="parts/list" -->
+    list parts with include inside
+    <!-- tpl:include="parts/pager" -->
+    <div>pager inside include</div>
+    <!-- /tpl:include="parts/pager" -->
+    <!-- /tpl:include="parts/list" -->
 
     <div>sample1-block end</div>
     <!-- /tpl:content -->

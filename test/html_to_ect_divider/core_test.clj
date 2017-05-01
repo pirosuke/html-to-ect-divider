@@ -4,8 +4,8 @@
      [html-to-ect-divider.core :refer :all]))
 
 (deftest test-convert-ect-files
-         (let [src-file-path "html"
-               output-file-path "ect"]
-           (convert-files (io/resource src-file-path) (io/resource output-file-path))
+         (let [src-path "src"
+               output-path "dest"]
+           (convert-files (io/resource src-path) (io/resource output-path))
            (testing "Output files"
                     (is (= 1 1)))))
