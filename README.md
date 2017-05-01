@@ -9,6 +9,7 @@ CLI tool to divide marked html files to ECT template parts.
 ## Options
 
 --d --dir SRC_DIR_PATH :Source HTML directory path
+
 --o --output OUTPUT_DIR_PATH :Divided file output directory path
 
 ## License
